@@ -1,0 +1,221 @@
+#include "Player.h"
+
+using namespace std;
+
+Player::Player()
+{
+
+    name = "";
+    gender = female;
+    age = 0;
+    job = "";
+	wins = 0;
+    technique = 0;
+    fatigue = 0;
+    popularity = 0;
+    candidate = false;
+
+}
+
+
+Player::Player(string n, genderOption g, int a)
+{
+
+    setName(n);
+    setGender(g);
+    setAge(a);
+    setJob("Cook");
+	setWins(0);
+    setTechnique(20 + (rand() % 60));
+    setFatigue(0);
+    setPopularity(50);
+    setCandidate(false);
+
+}
+
+Player::~Player()
+{
+
+    cout << "Player " << name << " is destroyed." << endl;
+
+}
+
+string Player::getName()
+{
+    return name;
+}
+
+genderOption Player::getGender()
+{
+    return gender;
+}
+
+int Player::getAge()
+{
+    return age;
+}
+
+string Player::getJob()
+{
+    return job;
+}
+
+int Player::getWins()
+{
+    return wins;
+}
+
+float Player::getTechnique()
+{
+    return technique;
+}
+
+float Player::getFatigue()
+{
+    return fatigue;
+}
+
+float Player::getPopularity()
+{
+    return popularity;
+}
+
+bool Player::getCandidate()
+{
+    return candidate;
+}
+
+void Player::setName(string val)
+{
+    name = val;
+}
+
+void Player::setGender(genderOption val)
+{
+    gender = val;
+}
+
+void Player::setAge(int val)
+{
+    if (val >= 18)
+        age = val;
+    else
+        cout << "Age must be an integer >= 18." << endl;
+}
+
+void Player::setWins(int val)
+{
+    if (val >= 0)
+        wins = val;
+    else
+        cout << "Wins must be a zero or positive number." << endl;
+}
+
+void Player::setJob(string val)
+{
+
+    job = val;
+
+}
+
+void Player::setTechnique(float val)
+{
+    if (val >= 0 && val <= 100)
+        technique = val;
+    else
+        cout << "Technique is a percentage, thus it takes values [0, 100]." << endl;
+}
+
+void Player::setFatigue(float val)
+{
+
+    if (val >= 0 && val <= 100)
+        fatigue = val;
+    else
+        cout << "Fatigue is a percentage, thus it takes values [0, 100]." << endl;
+}
+
+void Player::setPopularity(float val)
+{
+
+    if (val >= 0 && val <= 100)
+        popularity = val;
+    else
+        cout << "Popularity is a percentage, thus it takes values [0, 100]." << endl;
+}
+
+void Player::setCandidate(bool val)
+{
+
+    candidate = val;
+
+}
+
+void Player::work()
+{
+
+    float value = 20 + (((float) rand()) / (float) RAND_MAX)*20;
+    fatigue += value;
+    technique *= 1.05;
+    if (fatigue > 100)
+        fatigue = 100;
+    if (technique > 100)
+        technique = 100;
+}
+
+void Player::socialize()
+{
+
+    float value = -10 + (((float) rand()) / (float) RAND_MAX)*20;
+    popularity += value;
+    if (popularity < 0)
+        popularity = 0;
+    else if (popularity > 100)
+        popularity = 100;
+}
+
+void Player::practice()
+{
+    technique += 5;
+
+    if (technique > 100)
+        technique = 100;
+}
+
+void Player::sleep()
+{
+    fatigue = 0;
+}
+
+void Player::compete()
+{
+
+    float value = 10 + (((float) rand()) / (float) RAND_MAX)*10;
+    fatigue *= (1 + (value/100));
+
+    if (fatigue > 100)
+        fatigue = 100;
+}
+
+void Player::status()
+{
+
+    cout << "Name: " << name << endl;
+    cout << "Gender: ";
+    if (gender == male)
+        cout << "Male";
+    else
+        cout << "Female";
+    cout << endl;
+    cout << "Age: " << age << endl;
+    cout << "Job: " << job << endl;
+    cout << "Technique: " << technique << endl;
+    cout << "Fatigue: " << fatigue << endl;
+    cout << "Popularity: " << popularity << endl;
+    cout << "Candidate: ";
+    if (candidate == 0)
+        cout << "false";
+    else
+        cout << "true";
+    cout << endl << endl;
+}

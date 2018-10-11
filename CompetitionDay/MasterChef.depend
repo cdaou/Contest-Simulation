@@ -1,0 +1,106 @@
+# depslib dependency file v1.0
+1523081083 source:c:\users\angry laptop too\desktop\masterchef\main.cpp
+	"Team.h"
+
+1523029915 c:\users\angry laptop too\desktop\masterchef\player.h
+	<iostream>
+	<string>
+	<cstdio>
+	<cstdlib>
+
+1523029643 c:\users\angry laptop too\desktop\masterchef\team.h
+	<iostream>
+	<string>
+	"Player.h"
+
+1523030048 source:c:\users\angry laptop too\desktop\masterchef\team.cpp
+	"Team.h"
+	"Player.h"
+
+1523029901 source:c:\users\angry laptop too\desktop\masterchef\player.cpp
+	"Player.h"
+
+1523081242 source:c:\users\angry laptop too\desktop\masterchef\creativitycompetition.cpp
+
+1492455462 source:c:\users\angry laptop too\desktop\masterchef\immunitycompetition.cpp
+
+1492455468 source:c:\users\angry laptop too\desktop\masterchef\teamcompetition.cpp
+
+1526126730 source:c:\users\christos\desktop\masterchef\creativitycompetition.cpp
+	"CreativityCompetition.h"
+	"Round.h"
+
+1526126730 source:c:\users\christos\desktop\masterchef\immunitycompetition.cpp
+	"ImmunityCompetition.h"
+	"Round.h"
+
+1525624617 source:c:\users\christos\desktop\masterchef\team.cpp
+	"Team.h"
+	"Player.h"
+
+1525519158 c:\users\christos\desktop\masterchef\team.h
+	<iostream>
+	<string>
+	"Player.h"
+
+1523029916 c:\users\christos\desktop\masterchef\player.h
+	<iostream>
+	<string>
+	<cstdio>
+	<cstdlib>
+
+1526126992 source:c:\users\christos\desktop\masterchef\teamcompetition.cpp
+	"TeamCompetition.h"
+
+1526128130 source:c:\users\christos\desktop\masterchef\main.cpp
+	"Team.h"
+	"TeamCompetition.h"
+	"ImmunityCompetition.h"
+	"CreativityCompetition.h"
+	"FoodAward.h"
+	"ImmunityAward.h"
+	"ExcursionAward.h"
+
+1525624312 source:c:\users\christos\desktop\masterchef\player.cpp
+	"Player.h"
+
+1526128028 c:\users\christos\desktop\masterchef\teamcompetition.h
+	"Competition.h"
+	"FoodAward.h"
+	"Round.h"
+	<cstdlib>
+
+1525622744 c:\users\christos\desktop\masterchef\competition.h
+	<iostream>
+	<string>
+	"Team.h"
+
+1525623496 c:\users\christos\desktop\masterchef\foodaward.h
+	"Award.h"
+	<cstdlib>
+
+1525622744 c:\users\christos\desktop\masterchef\award.h
+	<string>
+	<iostream>
+
+1492448202 c:\users\christos\desktop\masterchef\round.h
+	<iostream>
+	<string>
+
+1526125750 c:\users\christos\desktop\masterchef\immunitycompetition.h
+	"Competition.h"
+	"ImmunityAward.h"
+	<cstdlib>
+
+1525623914 c:\users\christos\desktop\masterchef\immunityaward.h
+	"Award.h"
+
+1526127934 c:\users\christos\desktop\masterchef\creativitycompetition.h
+	"Competition.h"
+	"ExcursionAward.h"
+	<cstdlib>
+
+1525622910 c:\users\christos\desktop\masterchef\excursionaward.h
+	"Award.h"
+	<cstdlib>
+

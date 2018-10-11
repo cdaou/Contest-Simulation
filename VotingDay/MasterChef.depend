@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1526832352 source:c:\users\christos\desktop\masterchefpartd\immunitycompetition.cpp
+	"ImmunityCompetition.h"
+
+1526832352 c:\users\christos\desktop\masterchefpartd\immunitycompetition.h
+	"Competition.h"
+
+1526832352 c:\users\christos\desktop\masterchefpartd\competition.h
+	<string>
+	<iostream>
+	"Player.h"
+	"Team.h"
+	"ImmunityAward.h"
+
+1526832352 c:\users\christos\desktop\masterchefpartd\player.h
+	<iostream>
+	<ctime>
+	<string>
+	<cstdio>
+	<cstdlib>
+
+1526832352 c:\users\christos\desktop\masterchefpartd\team.h
+	<string>
+	<iostream>
+	"Player.h"
+
+1526832352 c:\users\christos\desktop\masterchefpartd\immunityaward.h
+	"Award.h"
+
+1526832352 c:\users\christos\desktop\masterchefpartd\award.h
+	<string>
+	<iostream>
+
+1526832352 source:c:\users\christos\desktop\masterchefpartd\main.cpp
+	"Player.h"
+	"Team.h"
+	"ImmunityCompetition.h"
+	"Voting.h"
+
+1527008142 c:\users\christos\desktop\masterchefpartd\voting.h
+	"Vote.h"
+	"Team.h"
+	<iostream>
+	<string>
+	<vector>
+	<map>
+
+1527008142 c:\users\christos\desktop\masterchefpartd\vote.h
+	<iostream>
+
+1526832352 source:c:\users\christos\desktop\masterchefpartd\player.cpp
+	"Player.h"
+	<string>
+	<iostream>
+
+1526832352 source:c:\users\christos\desktop\masterchefpartd\team.cpp
+	"Team.h"
+
+1527010916 source:c:\users\christos\desktop\masterchefpartd\voting.cpp
+	"Voting.h"
+
